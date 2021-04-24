@@ -1,242 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Xtra Blog</title>
-	<link rel="stylesheet" href="fontawesome/css/all.min.css"> 
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/xtra-blog.css" rel="stylesheet">
-    <link rel="logo" href="img/img-06.jpg">
-</head>
-<body>
-	<header class="tm-header" id="tm-header">
-        <div class="tm-header-wrapper">
-            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="tm-site-header">
-                <div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-times fa-2x"></i></div>            
-                <h1 class="text-center">Xtra Blog</h1>
-            </div>
-            <nav class="tm-nav" id="tm-nav">            
-                <ul>
-                    <li class="tm-nav-item active"><a href="index.html" class="tm-nav-link">
-                        <i class="fas fa-home"></i>
-                        Blog Home
-                    </a></li>
-                    <li class="tm-nav-item"><a href="" class="tm-nav-link">
-                        <i class="fas fa-pen"></i>
-                        Single Post
-                    </a></li>
-                    <li class="tm-nav-item"><a href="about.html" class="tm-nav-link">
-                        <i class="fas fa-users"></i>
-                        About Xtra
-                    </a></li>
-                    <li class="tm-nav-item"><a href="contact.html" class="tm-nav-link">
-                        <i class="far fa-comments"></i>
-                        Contact Us
-                    </a></li>
-                </ul>
-            </nav>
-            <div class="tm-mb-65">
-                <a rel="nofollow" href="https://fb.com/" class="tm-social-link">
-                    <i class="fab fa-facebook tm-social-icon"></i>
-                </a>
-                <a href="https://twitter.com" class="tm-social-link">
-                    <i class="fab fa-twitter tm-social-icon"></i>
-                </a>
-                <a href="https://instagram.com" class="tm-social-link">
-                    <i class="fab fa-instagram tm-social-icon"></i>
-                </a>
-                <a href="https://linkedin.com" class="tm-social-link">
-                    <i class="fab fa-linkedin tm-social-icon"></i>
-                </a>
-            </div>
-            <p class="tm-mb-80 pr-5 text-white">
-                Xtra Blog Is created by !3 HASHes WebD Team!
-            </p>
+<html>
+  <head>
+    <title>Microblogging Site</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/blocks/layout.css" />
+    <link rel="stylesheet" href="css/blocks/brand.css" />
+    <link rel="stylesheet" href="css/blocks/sidebar-menu.css" />
+    <link rel="stylesheet" href="css/blocks/tweet.css" />
+    <link rel="stylesheet" href="css/blocks/trends-for-you.css" />
+    <link rel="stylesheet" href="css/blocks/who-to-follow.css" />
+    <link rel="icon" href="svg/twitter.svg">
+  </head>
+  <body>
+    <div class="layout">
+      <div class="layout__left-sidebar">
+        <img src="./svg/twitter.svg" class="brand" />
+        <div class="sidebar-menu">
+          <div class="sidebar-menu__item sidebar-menu__item--active">
+            <img src="./svg/home.svg" class="sidebar-menu__item-icon" />
+            Home
+          </div>
+          <div class="sidebar-menu__item">
+            <img src="./svg/explore.svg" class="sidebar-menu__item-icon" />
+            Explore
+          </div>
+
+          <div class="sidebar-menu__item">
+            <img
+              src="./svg/notifications.svg"
+              class="sidebar-menu__item-icon"
+            />
+            Notifications
+          </div>
+
+          <div class="sidebar-menu__item">
+            <img src="./svg/messages.svg" class="sidebar-menu__item-icon" />
+            Messages
+          </div>
+
+          <div class="sidebar-menu__item">
+            <img src="./svg/profile.svg" class="sidebar-menu__item-icon" />
+            Profile
+          </div>
+
+          <div class="sidebar-menu__item">
+            <img src="./svg/more.svg" class="sidebar-menu__item-icon" />
+            More
+          </div>
         </div>
-    </header>
-    <div class="container-fluid">
-        <main class="tm-main">
-            <!-- Search form -->
-            <div class="row tm-row">
-                <div class="col-12">
-                    <form method="GET" class="form-inline tm-mb-80 tm-search-form">                
-                        <input class="form-control tm-search-input" name="query" type="text" placeholder="Search..." aria-label="Search">
-                        <button class="tm-search-button" type="submit">
-                            <i class="fas fa-search tm-search-icon" aria-hidden="true"></i>
-                        </button>                                
-                    </form>
-                </div>                
-            </div>            
-            <div class="row tm-row">
-                <article class="col-12 col-md-6 tm-post">
-                    <hr class="tm-hr-primary">
-                    <a href="" class="effect-lily tm-post-link tm-pt-60">
-                        <div class="tm-post-link-inner">
-                            <img src="img/img-01.jpg" alt="Image" class="img-fluid">                            
-                        </div>
-                        <span class="position-absolute tm-new-badge">New</span>
-                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Ipsum</h2>
-                    </a>                    
-                    <p class="tm-pt-30">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempore velit aspernatur autem consequuntur ullam esse, amet cumque, voluptates accusantium quia itaque! Doloribus odio excepturi eius alias, sunt explicabo neque.
-                    </p>
-                    <div class="d-flex justify-content-between tm-pt-45">
-                        <span class="tm-color-primary">HASHes !3</span>
-                        <span class="tm-color-primary">June 24, 2020</span>
-                    </div>
-                    <hr>
-                    <div class="d-flex justify-content-between">
-                        <span>36 comments</span>
-                        <span>by Ipsum</span>
-                    </div>
-                </article>
-                <article class="col-12 col-md-6 tm-post">
-                    <hr class="tm-hr-primary">
-                    <a href="" class="effect-lily tm-post-link tm-pt-60">
-                        <div class=" tm-post-link-inner">
-                            <img src="img/img-02.jpg" alt="Image" class="img-fluid">                            
-                        </div>
-                        <span class="position-absolute tm-new-badge">New</span>
-                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Lorem Ipsum</h2>
-                    </a>                    
-                    <p class="tm-pt-30">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro id beatae fugiat. Odio blanditiis, obcaecati quaerat expedita soluta optio odit excepturi, consequatur aperiam magnam velit nulla pariatur fugit dolor nobis?
-                    </p>
-                    <div class="d-flex justify-content-between tm-pt-45">
-                        <span class="tm-color-primary">HASHes !3</span>
-                        <span class="tm-color-primary">June 16, 2020</span>
-                    </div>
-                    <hr>
-                    <div class="d-flex justify-content-between">
-                        <span>48 comments</span>
-                        <span>by Ipsum</span>
-                    </div>
-                </article>
-                <article class="col-12 col-md-6 tm-post">
-                    <hr class="tm-hr-primary">
-                    <a href="" class="effect-lily tm-post-link tm-pt-20">
-                        <div class="tm-post-link-inner">
-                            <img src="img/img-03.jpg" alt="Image" class="img-fluid">
-                        </div>
-                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Lorem Ipsum</h2>
-                    </a>                    
-                    <p class="tm-pt-30">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nesciunt corrupti sunt sed cum minima in accusantium! Possimus aut eos, in, amet quisquam saepe tempora soluta beatae pariatur consectetur velit?
-                    </p>
-                    <div class="d-flex justify-content-between tm-pt-45">
-                        <span class="tm-color-primary">HASHes !3</span>
-                        <span class="tm-color-primary">June 11, 2020</span>
-                    </div>
-                    <hr>
-                    <div class="d-flex justify-content-between">
-                        <span>24 comments</span>
-                        <span>by Ipsum</span>
-                    </div>
-                </article>
-                <article class="col-12 col-md-6 tm-post">
-                    <hr class="tm-hr-primary">
-                    <a href="" class="effect-lily tm-post-link tm-pt-20">
-                        <div class="tm-post-link-inner">
-                            <img src="img/img-04.jpg" alt="Image" class="img-fluid">
-                        </div>
-                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Lorem Ipsum</h2>
-                    </a>                    
-                    <p class="tm-pt-30">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, obcaecati magni unde officiis rerum, deleniti fuga hic non voluptates nesciunt alias tempora! Labore nostrum facilis tempora quasi optio alias atque.
-                    </p>
-                    <div class="d-flex justify-content-between tm-pt-45">
-                        <span class="tm-color-primary">HASHes !3</span>
-                        <span class="tm-color-primary">June 4, 2020</span>
-                    </div>
-                    <hr>
-                    <div class="d-flex justify-content-between">
-                        <span>72 comments</span>
-                        <span>by ipsum</span>
-                    </div>
-                </article>
-                <article class="col-12 col-md-6 tm-post">
-                    <hr class="tm-hr-primary">
-                    <a href="" class="effect-lily tm-post-link tm-pt-20">
-                        <div class="tm-post-link-inner">
-                            <img src="img/img-05.jpg" alt="Image" class="img-fluid">
-                        </div>
-                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Lorem</h2>
-                    </a>                    
-                    <p class="tm-pt-30">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae libero sit amet odio ultricies molestie. MaVivamus at purus sed justo placerat condimentum. Nam arcu elit, interdum id pulvinar sit amet, semper ut odio.
-                      
-                    </p>
-                    
-                    <hr>
-                    <div class="d-flex justify-content-between">
-                        <span>84 comments</span>
-                        <span>by Ipsum</span>
-                    </div>
-                </article>
-                <article class="col-12 col-md-6 tm-post">
-                    <hr class="tm-hr-primary">
-                    <a href="" class="effect-lily tm-post-link tm-pt-20">
-                        <div class="tm-post-link-inner">
-                            <img src="img/img-06.jpg" alt="Image" class="img-fluid">
-                        </div>
-                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Lorem Ipsum</h2>
-                    </a>                    
-                    <p class="tm-pt-30">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt natus accusantium dicta beatae illo nulla, unde rem quibusdam nostrum debitis tempora sit molestiae mollitia vitae sed numquam illum ratione. Minima.
-                    </p>
-                    <div class="d-flex justify-content-between tm-pt-45">
-                        <span class="tm-color-primary">HASHes !3
-                        </span>
-                        <span class="tm-color-primary">June 16, 2020</span>
-                    </div>
-                    <hr>
-                    <div class="d-flex justify-content-between">
-                        <span>96 comments</span>
-                        <span>by Ipsum</span>
-                    </div>
-                </article>
+      </div>
+      <div class="layout__main">
+        <div class="tweet">
+          <img class="tweet__author-logo" src="./images/h3.jpeg" />
+          <div class="tweet__main">
+            <div class="tweet__header">
+              <div class="tweet__author-name">
+                Arshmah 
+              </div>
+              <div class="tweet__author-slug">
+                @arshmah__
+              </div>
+              <div class="tweet__publish-time">
+                38m
+              </div>
             </div>
-            <div class="row tm-row tm-mt-100 tm-mb-75">
-                <div class="tm-prev-next-wrapper">
-                    <a href="#" class="mb-2 tm-btn tm-btn-primary tm-prev-next disabled tm-mr-20">Prev</a>
-                    <a href="#" class="mb-2 tm-btn tm-btn-primary tm-prev-next">Next</a>
+            <div class="tweet__content">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos neque dolore, veritatis nemo quis exercitationem tempore praesentium distinctio, quam sed quisquam laboriosam delectus autem! Delectus quidem inventore autem molestiae quisquam.
+            </div>
+          </div>
+        </div>
+        <div class="tweet">
+          <img class="tweet__author-logo" src="./images/h3.jpeg" />
+          <div class="tweet__main">
+            <div class="tweet__header">
+              <div class="tweet__author-name">
+                Arfat
+              </div>
+              <div class="tweet__author-slug">
+                @arfat__
+              </div>
+              <div class="tweet__publish-time">
+                10d
+              </div>
+            </div>
+            <div class="tweet__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid hic quae esse fugit dignissimos ea eaque doloribus! Veritatis sequi tenetur est id amet natus, eum porro itaque temporibus aperiam ex!
+              
+              @Faisal__Manzer #iWriteCode #!3 #microblog
+            </div>
+          </div>
+        </div>
+
+        <div class="tweet">
+          <img class="tweet__author-logo" src="./images/h3.jpeg" />
+          <div class="tweet__main">
+            <div class="tweet__header">
+              <div class="tweet__author-name">
+                HASHes Coding Club
+              </div>
+              <div class="tweet__author-slug">
+                @HASHes !3
+              </div>
+              <div class="tweet__publish-time">
+                15h
+              </div>
+            </div>
+            <div class="tweet__content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil debitis totam, similique quis temporibus non libero vero molestiae qui, suscipit cupiditate ea. Atque obcaecati, ratione debitis eveniet dolor in tempore?
+              
+              <img class="tweet__image" src="./images/h3.jpeg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="tweet">
+          <img class="tweet__author-logo" src="./images/h3.jpeg" />
+          <div class="tweet__main">
+            <div class="tweet__header">
+              <div class="tweet__author-name">
+                Anzil
+              </div>
+              <div class="tweet__author-slug">
+                @anzil_
+              </div>
+              <div class="tweet__publish-time">
+                38m
+              </div>
+            </div>
+            <div class="tweet__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam saepe laboriosam, aliquid quae labore nobis asperiores doloremque. Sunt minima neque saepe adipisci, excepturi quos iusto. Fuga consectetur aspernatur laboriosam aliquam.
+            </div>
+          </div>
+        </div>
+
+        <div class="tweet">
+          <img class="tweet__author-logo" src="./images/h3.jpeg" />
+          <div class="tweet__main">
+            <div class="tweet__header">
+              <div class="tweet__author-name">
+                Faisal
+              </div>
+              <div class="tweet__author-slug">
+                @Faisal__Manzer
+              </div>
+              <div class="tweet__publish-time">
+                38m
+              </div>
+            </div>
+            <div class="tweet__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aut error autem animi neque eos vero odit ratione aliquid itaque similique obcaecati ullam, hic atque perspiciatis a consequatur odio unde?
+            </div>
+          </div>
+        </div>
+
+        <div class="tweet">
+          <img class="tweet__author-logo" src="./images/h3.jpeg" />
+          <div class="tweet__main">
+            <div class="tweet__header">
+              <div class="tweet__author-name">
+                Devansh_Singh
+              </div>
+              <div class="tweet__author-slug">
+                @dev_sin_par
+              </div>
+              <div class="tweet__publish-time">
+                38m
+              </div>
+            </div>
+            <div class="tweet__content">
+              Just a demo Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab natus quis officia illum veritatis. Hic distinctio dolore est a aliquid. Tempore maiores architecto, mollitia voluptatem explicabo molestias neque nobis temporibus?
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="layout__right-sidebar-container">
+        <div class="layout__right-sidebar">
+          <div class="trends-for-you">
+            <div class="trends-for-you__block">
+              <div class="trends-for-you__heading">
+                Trends for you
+              </div>
+            </div>
+            <div class="trends-for-you__block">
+              <div class="trends-for-you__meta-information">
+                Trending in India
+              </div>
+              <div class="trends-for-you__trend-name">
+                #iPhone12
+              </div>
+              <div class="trends-for-you__meta-information">
+                155k Tweets
+              </div>
+            </div>
+            <div class="trends-for-you__block">
+              <div class="trends-for-you__meta-information">
+                Trending in India
+              </div>
+              <div class="trends-for-you__trend-name">
+                #AmazonPrimeDay
+              </div>
+            </div>
+            <div class="trends-for-you__block">
+              <div class="trends-for-you__meta-information">
+                Trending - Trending
+              </div>
+              <div class="trends-for-you__trend-name">
+                #autos #iWriteCode
+              </div>
+              <div class="trends-for-you__meta-information">
+                2,800 Tweets
+              </div>
+            </div>
+          </div>
+          <div class="who-to-follow">
+            <div class="who-to-follow__block">
+              <div class="who-to-follow__heading">
+                Who to follow
+              </div>
+            </div>
+            <div class="who-to-follow__block">
+              <img
+                class="who-to-follow__author-logo"
+                src="./images/h3.jpeg"
+              />
+              <div class="who-to-follow__content">
+                <div>
+                  <div class="who-to-follow__author-name">
+                    Anzil
+                  </div>
+                  <div class="who-to-follow__author-slug">
+                    @anzil_
+                  </div>
                 </div>
-                <div class="tm-paging-wrapper">
-                    <span class="d-inline-block mr-3">Page</span>
-                    <nav class="tm-paging-nav d-inline-block">
-                        <ul>
-                            <li class="tm-paging-item active">
-                                <a href="#" class="mb-2 tm-btn tm-paging-link">1</a>
-                            </li>
-                            <li class="tm-paging-item">
-                                <a href="#" class="mb-2 tm-btn tm-paging-link">2</a>
-                            </li>
-                            <li class="tm-paging-item">
-                                <a href="#" class="mb-2 tm-btn tm-paging-link">3</a>
-                            </li>
-                            <li class="tm-paging-item">
-                                <a href="#" class="mb-2 tm-btn tm-paging-link">4</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>                
-            </div>            
-            <footer class="row tm-row">
-                <hr class="col-12">
-                <div class="col-md-6 col-12 tm-color-gray">
-                   
+                <div class="who-to-follow__button">
+                  Follow
                 </div>
-                <div class="col-md-6 col-12 tm-color-gray tm-copyright">
-                    Copyright 2021 Xtra Blog
+              </div>
+            </div>
+            <div class="who-to-follow__block">
+              <img
+                class="who-to-follow__author-logo"
+                src="./images/h3.jpeg"
+              />
+              <div class="who-to-follow__content">
+                <div>
+                  <div class="who-to-follow__author-name">
+                    Faisal Manzer
+                  </div>
+                  <div class="who-to-follow__author-slug">
+                    @Faisal__Manzer
+                  </div>
                 </div>
-            </footer>
-        </main>
+                <div class="who-to-follow__button">
+                  Follow
+                </div>
+              </div>
+            </div>
+
+            <div class="who-to-follow__block">
+              <img
+                class="who-to-follow__author-logo"
+                src="./images/h3.jpeg"
+              />
+              <div class="who-to-follow__content">
+                <div>
+                  <div class="who-to-follow__author-name">
+                    Arfat
+                  </div>
+                  <div class="who-to-follow__author-slug">
+                    @arfat__
+                  </div>
+                </div>
+                <div class="who-to-follow__button">
+                  Follow
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
