@@ -1,0 +1,236 @@
+:root{
+    --primary-color : #1DA1F2;  
+    --primary-color-dark : #118dda; 
+    --primary-color-light:  #aadaf8;  
+    --secondary-color : #f7f9fa;
+    --secondary-color-dark :#f7f9fac5;
+    --secondary-color-darkest :#d3d9dbfb;
+    --white :#ffffff; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+/* Main navigation panel */
+nav{
+    padding: 1%;
+    /* position: absolute;
+    background-color: var(--white); */
+    display: relative;
+    flex: 1;
+}
+.mini-logo {
+    margin: 0.1% 14%;
+    height: 30px;
+}
+.mini-logo:hover {
+    background-color: rgb(229, 246, 252) ;
+    border-radius: 20px ;
+}
+
+.nav-option{
+    display: flex;
+    justify-content: left;
+    width: 80%;
+    padding-left: 11% ;
+    margin: 3px 0;
+}
+.nav-option a, img, h3{
+    size: 25px;
+    display: inline-block;
+    padding: 5px;
+    text-align: bottom;
+}
+
+.nav-option h3{
+    text-size-adjust: 20px;
+    text-justify: inter-cluster;
+    vertical-align: bottom;
+    /* -ms-text-combine-horizontal: ; */
+}
+.nav-option :hover{
+    color: var(--primary-color);
+    background-color: rgb(229, 246, 252);
+    border-radius: 50px;
+}
+.nav-option .wide-button{
+    margin: 20px 15px;
+}
+/* Main */
+main{
+    flex: 2;
+}
+main header{
+    padding: 2%;
+    border-bottom: 2px solid var(--secondary-color-darkest);
+    /* position: fixed;
+    top: 0;
+    background-color: var(--white); */
+    
+}
+input{
+    border-radius: 20px;
+    border: none;
+    background-color: var(--secondary-color-darkest) ;
+}
+input:hover{  
+    border-color:  var(--primary-color);
+    background-color: var(--white);
+}
+input:focus, button:focus{
+    outline: none;
+}
+
+#top-navbar li{
+    padding: 10px 3.8% 5px 3.8%;
+}
+.main-story{
+    background-image: url("../assets/bg-main-story.svg");
+    background-blend-mode: color-burn;
+    height: 60vh;
+    /* background-clip: padding-box; */
+    background-size: contain;
+    
+}
+.headline{
+    text-align: end;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-anchor: middle;
+    
+}
+.trends{
+    margin: 15px;
+    border-bottom: 1 px solid var(--secondary-color-darkest);
+}
+
+/* Side bar */
+aside{
+    /* margin: 20px; */
+    padding: 2% 3%;
+    align-items: center;
+    /* border : 1px dashed greenyellow; */
+    flex: 1;
+}
+.follow-list-container{
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+}
+.follow-list{
+    position: relative;
+    margin: 5%;
+}
+.follow-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5% 0;
+}
+.follow-item:hover{
+    background-color: var(--secondary-color-dark);
+}
+
+.follow-list-container>p{
+    margin: 5%;
+    padding: 5% 0;
+}
+.follow-list-container>h3{
+    margin: 5% 5% 0 5% ;
+}
+
+.follow-list-container a{
+    /* margin: 5%; */
+    padding: 5% 0;
+    color: var(--primary-color);
+}
+
+.follow-item, .follow-list-container>p{
+    border-top: 1px solid var(--secondary-color-darkest);
+}
+
+
+/* Footer */
+footer{
+    padding: 5%;
+    font-size: 11px;
+    color: var(--secondary-color-dark);
+    
+}
+footer li{
+    padding:  3px 5px;
+}
+footer a:hover{
+    text-decoration-line: underline;
+}
+
+
+
+/* global */
+.bordered{
+    border: 1px solid var(--secondary-color-darkest) ;
+}
+img .logo{
+    height: 30px;
+}
+button{
+    height: 30px;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+}
+.wide-button{
+    margin: 20px 15px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    width: 90%;
+    font-size: 16px;
+    font-weight: bold;
+}
+.wide-button:hover{
+    background-color: var(--primary-color-dark);
+}
+.small-button{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+.small-button:hover{
+    background-color: rgb(232, 240, 243); 
+}
+ul{
+    list-style: none;
+    text-decoration-style: none;
+}
+li{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+
+.dp-mini{
+    height: 30px;
+    /* width: 20px; */
+}
+.search{
+    padding-left: 20px;
+    height: 40px;
+    width: 100%;
+}
+.search:hover{
+    border : 2px solid var(--primary-color);
+}
+.current-tab{
+    color: var(--primary-color);
+}
