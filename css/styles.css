@@ -32,7 +32,7 @@ nav{
     flex: 1;
 }
 .mini-logo {
-    margin: 0.1% 14%;
+    padding: 10px 14%;
     height: 30px;
 }
 .mini-logo:hover {
@@ -44,8 +44,8 @@ nav{
     display: flex;
     justify-content: left;
     width: 80%;
-    padding: 3% 2% 5% 13% ;
-    /* margin: 3px 0; */
+    padding: 10px 3% 10px 13% ;
+    height: 40px;
 }
 .nav-option a, img, h3{
     /* size: 25px; */
@@ -69,6 +69,7 @@ nav{
 /* Main */
 main{
     flex: 2;
+    width: 100vw;
 }
 main header{
     padding: 2% 3% 0 3%;
@@ -92,16 +93,19 @@ input:focus, button:focus{
     margin-top: 10px;
     padding: 10px 3.8% 5px 3.8%;
 }
+.tab-content{
+    scroll-snap-type: proximity ;
+}
 .main-story{
     background-image: url("../assets/vaccinating-man.jpg");
-    background-blend-mode: color-burn;
-    height: 60vh;
+    height: 25vw;
+    width: 100%;
     background-size: contain;
     
 }
 .headline {
     background-image: linear-gradient( black, rgb(0, 0, 0, 0));
-    padding: 10px;
+    padding: 3%;
     text-align: left;
     line-height: 1.5em;
 }
@@ -109,12 +113,12 @@ input:focus, button:focus{
 .headline a{
     color: var(--white);
     font-weight: 700;
-    font-size: 25px;
+    font-size: 2vw;
 }
 .headline h6{
     color: var(--white);
     font-weight: 500;
-    font-size: 12px;
+    font-size: 1vw;
 }
 .trend{
     margin: 0;
@@ -126,12 +130,11 @@ input:focus, button:focus{
 }
 .trend h6{
     color: var(--secondary-color-font);
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 1vw;
+    font-weight: 400;
 }
-.tab-content{
-    margin: 0;
-    padding: 0;
+.trend h3{
+    font-size: 1.5vw;
 }
 
 .tweets{
@@ -149,9 +152,11 @@ input:focus, button:focus{
     padding: 0 10px 0 10px;
 }
 .tweet-text>p{
+    font-size: 1.1vw;
     padding-top: 5px;
 }
 .media{
+    /* width: 3vw; */
     padding: 10px 10px 0 0;
 }
 .media>img{
@@ -164,7 +169,6 @@ input:focus, button:focus{
 }
 .tweet-engagement>div{
     position: relative;
-    /* vertical-align: top; */
 }
 .tweet-engagement .count{
     vertical-align: super;
@@ -306,8 +310,9 @@ ul>.current-tab:hover{
 
 
 .dp-mini{
-    height: 60px;
-    /* width: 20px; */
+    height: 5vw;
+    border: 1px solid var(--secondary-color);
+    border-radius: 90px;
 }
 .search{
     padding-left: 20px;
@@ -321,31 +326,45 @@ ul>.current-tab:hover{
     color: var(--primary-color);
 }
 .name{
-    font-size: 17px;
+    font-size: 1.3vw;
     font-weight: 700;
     text-align: left;
     padding-right: 3px;
 }
 .username, .time{
-    font-size: 15px;
+    font-size: 1.2vw;
     font-weight: 400;
     text-align: left;
+    padding-right: 5px;
 }
 .count{
     height: 5px;
 }
 
 @media screen and (max-width : 1200px) {
+    main{
+        flex: 1;
+    }
     .nav-option{
         justify-content: left;
-        /* width: 80%; */
-        padding: 0% 2% 0% 13% ;
+        height: 40px;
+        width: 30%;
+        padding: 10px 3% 10px 13% ;
     }
     .nav-option-text{
         visibility: hidden;
+        font-size: 0px;
     }
-    .nav-option>a{
-        margin: 0;
-        padding: 0;
+
+}
+@media only screen and (max-width : 1022px) {
+    
+    main{
+        width: 70%;
     }
+    aside{
+        visibility: hidden;
+        width :0%;
+    }
+    
 }
