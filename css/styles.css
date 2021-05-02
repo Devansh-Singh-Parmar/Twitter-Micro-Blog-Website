@@ -44,20 +44,19 @@ nav{
     display: flex;
     justify-content: left;
     width: 80%;
-    padding-left: 11% ;
-    margin: 3px 0;
+    padding: 3% 2% 5% 13% ;
+    /* margin: 3px 0; */
 }
 .nav-option a, img, h3{
-    size: 25px;
-    display: inline-block;
-    padding: 5px;
-    text-align: bottom;
+    /* size: 25px; */
+    display: inline;
 }
 
-.nav-option h3{
-    text-size-adjust: 20px;
-    text-justify: inter-cluster;
-    vertical-align: bottom;
+
+.nav-option-text{
+   
+    vertical-align: top;
+    padding-left: 15px;
 }
 .nav-option :hover{
     color: var(--primary-color);
@@ -146,22 +145,37 @@ input:focus, button:focus{
     background-color: var(--secondary-color);
 }
 .tweet-text{
+    position: relative;
     padding: 0 10px 0 10px;
 }
+.tweet-text>p{
+    padding-top: 5px;
+}
 .media{
-    padding: 20px 20px 0 20px;
-    border-radius: 40px;
+    padding: 10px 10px 0 0;
+}
+.media>img{
+    border: 2px solid var(--white) ;
+    border-radius: 20px;
 }
 .tweet-engagement{
     padding: 0 40px;
     justify-content: space-between;
 }
-.engage-logo{
-    display: inherit;
+.tweet-engagement>div{
+    position: relative;
+    /* vertical-align: top; */
+}
+.tweet-engagement .count{
+    vertical-align: super;
+    padding-bottom: 15px;
+    padding-top: 5px;
 }
 .engage-logo{
-    height: 25px;
+    display: inline;
+    height: 20px;
 }
+
 section>div, section>ul{
     border-bottom: 10px solid var(--secondary-color-darkest);
 }
@@ -179,21 +193,20 @@ aside{
 }
 .follow-list{
     position: relative;
-    margin: 5%;
 }
 .follow-item{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 5% 0;
+    justify-content: left;
+    padding: 2% 0;
 }
+
 .follow-item:hover{
     background-color: var(--secondary-color-dark);
 }
 
 .follow-list-container>p{
-    margin: 5%;
-    padding: 5% 0;
+    padding: 5%;
 }
 .follow-list-container>h3{
     margin: 5% 5% 0 5% ;
@@ -207,6 +220,13 @@ aside{
 
 .follow-item, .follow-list-container>p{
     border-top: 1px solid var(--secondary-color-darkest);
+}
+.follow-item>.user{
+    flex: 4;
+}
+.follow-item>.dp-mini, .follow-item>.small-button{
+    flex: 1;
+    padding-right: 10px;
 }
 
 
@@ -297,14 +317,35 @@ ul>.current-tab:hover{
 .search:hover{
     border : 2px solid var(--primary-color);
 }
-.current-tab{
+.current-tab>a>h3{
     color: var(--primary-color);
 }
 .name{
     font-size: 17px;
     font-weight: 700;
+    text-align: left;
+    padding-right: 3px;
 }
-.username{
-    font-size: 14px;
+.username, .time{
+    font-size: 15px;
     font-weight: 400;
+    text-align: left;
+}
+.count{
+    height: 5px;
+}
+
+@media screen and (max-width : 1200px) {
+    .nav-option{
+        justify-content: left;
+        /* width: 80%; */
+        padding: 0% 2% 0% 13% ;
+    }
+    .nav-option-text{
+        visibility: hidden;
+    }
+    .nav-option>a{
+        margin: 0;
+        padding: 0;
+    }
 }
