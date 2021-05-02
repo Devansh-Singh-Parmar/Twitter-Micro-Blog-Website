@@ -253,10 +253,10 @@ button{
     text-align: center;
     padding: 5px;
 }
-.current-tab{
+ul>.current-tab{
     border-bottom: 3px solid var(--primary-color);
 }
-ul .current-tab:hover{
+ul>.current-tab:hover{
     background-color: rgb(232, 240, 243);
     border-radius: 5px;
 }
